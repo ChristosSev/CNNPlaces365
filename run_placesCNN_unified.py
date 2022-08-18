@@ -16,7 +16,8 @@ import argparse
 from glob import glob
 from matplotlib import pyplot as plt
 
-viz_dir = '/Users/christos/MIVRIZEISRE/EZDRUMMER/visualizations/'
+viz_dir = './visualizations/'
+os.makedirs(viz_dir, exist_ok=True)
 #Parsing the arguments
 
 parser = argparse.ArgumentParser()
